@@ -1,0 +1,10 @@
+{
+  "appCast" : "",
+  "logo" : "sparkles",
+  "version" : "0.0.1",
+  "homePage" : "https:\/\/github.com\/ysnows\/enconvo.rewrite",
+  "extensionId" : "enconvo.rewrite",
+  "name" : "Rewrite",
+  "author" : "enconvo",
+  "description" : "Rephrase this text."
+}
