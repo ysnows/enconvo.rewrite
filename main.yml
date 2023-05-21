@@ -34,6 +34,6 @@ description: Rephrase this text.
 async: false
 shortName: ''
 homePage: https://github.com/ysnows/enconvo.rewrite
-appCast: ''
+appCast: 'https://raw.githubusercontent.com/ysnows/enconvo.rewrite/main/appcast.json'
 shortCut: ''
 minAppVersion: ''

@@ -1,5 +1,5 @@
 {
-  "appCast" : "",
+  "appCast" : "https://raw.githubusercontent.com/ysnows/enconvo.rewrite/main/appcast.json",
   "logo" : "sparkles",
   "version" : "0.0.1",
   "homePage" : "https:\/\/github.com\/ysnows\/enconvo.rewrite",
