@@ -1,39 +1,57 @@
 name: Rewrite
-version: 0.0.1
+version: 0.0.3
 author: enconvo
-on: {}
+on: { }
 steps:
-- name: ''
-  uses: prompt
-  env:
-    Messages:
-      type: messages
-      value: ''
-      sort: 2
-      messages:
-      - role: system
-        content: 'Rephrase this text: {{text|contextText|copiedText}}'
-    Model:
-      type: enum
-      value: gpt-3.5-turbo
-      sort: 0
-      messages: []
-    Output:
-      type: bool
-      value: 'true'
-      sort: 3
-      messages: []
-    Temperature:
-      type: enum
-      value: '0.9'
-      sort: 1
-      messages: []
+  - name: ''
+    uses: prompt
+    env:
+      Model:
+        type: enum
+        value: gpt-3.5-turbo
+        sort: 0
+        messages: [ ]
+      Messages:
+        type: messages
+        value: ''
+        sort: 2
+        messages:
+          - role: system
+            content: 'Rephrase this text: {{text|contextText|copiedText}}'
+      Temperature:
+        type: enum
+        value: '1.0'
+        sort: 1
+        messages: [ ]
 extensionId: enconvo.rewrite
 logo: sparkles
 description: Rephrase this text.
 async: false
-shortName: ''
 homePage: https://github.com/ysnows/enconvo.rewrite
-appCast: 'https://raw.githubusercontent.com/ysnows/enconvo.rewrite/main/appcast.json'
-shortCut: ''
-minAppVersion: ''
+appCast: https://raw.githubusercontent.com/ysnows/enconvo.rewrite/main/appcast.json
+minAppVersion: 1.2.1
+flowType: prompt
+options:
+  - title: General
+    items:
+      - identifier: Alias
+        type: text
+        title: Alias
+        defaultValue: ''
+        menuValues: [ ]
+        desc: ''
+        placeholderText: Add alias
+        textWidth: 1.6e+2
+        disable: false
+      - identifier: Hotkey
+        type: hotkey
+        title: Hotkey
+        defaultValue: ''
+        menuValues: [ ]
+        desc: "This shortcut will open an ai conversation window from anywhere in the
+      system\n      . Make sure it is not conflicting with other global shortcuts."
+        placeholderText: Add a hotkey to global start
+        textWidth: 1.6e+2
+        disable: false
+    desc: ''
+sort: 10
